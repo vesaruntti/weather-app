@@ -19,7 +19,8 @@ export const App = () => {
   return (
     <RootSiblingParent>
       <NavigationContainer>
-        <Stack.Navigator/>
+        <Stack.Navigator>
+          <Stack.Screen />
         </Stack.Navigator>
       </NavigationContainer>
     </RootSiblingParent>
