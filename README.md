@@ -7,4 +7,4 @@ Future improvements would be associated with 5 day forecast window, more expande
 ---
 API
 - [Weather API](https://https://www.weatherapi.com/)
-- [Weather API](https://https://www.weatherapi.com/docs)
+- [Weather API DOCS](https://https://www.weatherapi.com/docs)
