@@ -12,5 +12,6 @@ Fixes
 
 ---
 API
-- [Weather API]([https://www.weatherapi.com/])
-- [Weather API DOCS]([https://www.weatherapi.com/docs])
+- [Weather API](https://www.weatherapi.com/)
+- [Weather API Docs](https://www.weatherapi.com/docs/)
+
