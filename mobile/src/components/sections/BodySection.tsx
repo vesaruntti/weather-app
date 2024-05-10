@@ -36,12 +36,16 @@ export const BodySection = () => {
         </View>
         {/* Temperature */}
         <View style={styles.temperatureWrapper}>
-          <Text style={styles.temperatureText}>
-            {temperatureC.toString().length <= 1
-              ? `0${temperatureC}`
-              : temperatureC}
-          </Text>
-          <Image style={styles.ringIcon} source={ringIcon} />
+          <View style={styles.temperatureTextWrapper}>
+            <Text style={styles.temperatureText}>
+              {temperatureC.toString().length <= 1
+                ? `0${temperatureC}`
+                : temperatureC}
+            </Text>
+          </View>
+          <View style={styles.ringWrapper}>
+            <Image style={styles.ringIcon} source={ringIcon} />
+          </View>
         </View>
       </View>
     </View>
@@ -106,8 +110,13 @@ const styles = StyleSheet.create({
   temperatureWrapper: {
     height: '100%',
     width: '55%',
+    flexDirection: 'row',
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
+  },
+  temperatureTextWrapper: {
+    width: 'auto',
+    height: '100%',
   },
   temperatureText: {
     fontFamily: fonts.poppinsExtraLight,
@@ -117,10 +126,12 @@ const styles = StyleSheet.create({
     color: 'white',
     letterSpacing: 5,
   },
+  ringWrapper: {
+    width: '10%',
+    height: '100%',
+    paddingTop: 10,
+  },
   ringIcon: {
-    position: 'absolute',
-    top: 10,
-    right: 80,
     width: 17.5,
     height: 17.5,
     resizeMode: 'contain',

@@ -7,6 +7,11 @@ export const store = configureStore({
     weather: weatherSlice,
     coordinate: coordinatesSlice,
   },
+  middleware: getDefaultMiddleware =>
+    getDefaultMiddleware({
+      immutableCheck: { warnAfter: 128 },
+      serializableCheck: { warnAfter: 128 },
+    }),
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
