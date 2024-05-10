@@ -12,6 +12,6 @@ Fixes
 
 ---
 API
-https://www.weatherapi.com/
-https://www.weatherapi.com/docs/
+- https://www.weatherapi.com/
+- https://www.weatherapi.com/docs/
 
